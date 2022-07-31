@@ -10,7 +10,7 @@ import xmltodict
 # open the input xml file and read
 # data in form of python dictionary
 # using xmltodict module
-with open("C:/Users/vanev/Dropbox/PC/Documents/Respaldos Proyectos/Develop/AAT Getty/aat_xml_0622/AAT.xml", encoding="utf8") as xml_file:
+with open("AAT.xml", encoding="utf8") as xml_file:
      
     data_dict = xmltodict.parse(xml_file.read())
     xml_file.close()
