@@ -3,11 +3,13 @@ import json
 #you need to add you path here
 with open(os.path.join('C:/Users/vanev/Dropbox/PC/Documents/Respaldos Proyectos/Develop/AAT Getty/', 'data.json'), 'r',
           encoding='utf-8') as f1:
-    ll = [json.loads(line.strip()) for line in f1.readlines()]
+    lla = [json.loads(line.strip()) for line in f1.readlines()]
 
+#
     #this is the total length size of the json file
-    print(len(ll))
-
+    print(len(lla))
+for lle in lla[0].values():
+    ll = lle['Subject']
     #in here 2000 means we getting splits of 2000 tweets
     #you can define your own size of split according to your need
     size_of_the_split=2000
